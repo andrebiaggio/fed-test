@@ -52,13 +52,31 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 30px 20px;
+  background-color: #2b3034;
 }
+
 .layout_header {
   margin-bottom: 30px;
   text-align: center;
 }
 
+/* Fonts */
+* {
+  font-family: Segoe UI, Arial;
+}
+
 /* Begin styling the report items here! */
 .reports {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+}
 
+.reports .reports_item .reports_docs {
+  width: 100%;
+}
+
+.reports .reports_item .reports_docs a {
+  font-size: .8rem;
 }
